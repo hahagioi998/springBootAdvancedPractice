@@ -3,11 +3,12 @@ package study.springbootadvanced.trace.threadlocal;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import study.springbootadvanced.trace.threadlocal.code.FieldService;
+import study.springbootadvanced.trace.threadlocal.code.ThreadLocalService;
 
 @Slf4j
-public class FieldServiceTest {
+public class ThreadLocalServiceTest {
 
-    private FieldService fieldService = new FieldService();
+    private ThreadLocalService fieldService = new ThreadLocalService();
 
     @Test
     void field(){
@@ -40,8 +41,8 @@ public class FieldServiceTest {
 
         /**
          * 1. fieldService.logic내의 1초(1000 milis) 보다 더 적은 100 millis의 시간의 할당
-         * 2. fieldService.logic 이 끝나기 전에 ThreadB가 실행
-         * 3. 동시성 문제 발생
+         * 2. ThreadLocal 덕분에 쓰레드 마다 별도의 데이터 저장소를 가져 동시성 문제 해결
+         * 3. 동시성 문제 발생  X
          */
         sleep(100);
 
