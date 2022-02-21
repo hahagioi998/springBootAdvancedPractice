@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/템플릿 메서드 패턴, 전략 패턴, 템플릿 콜백 패턴/src/main/main.iml" filepath="$PROJECT_DIR$/템플릿 메서드 패턴, 전략 패턴, 템플릿 콜백 패턴/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proxy-start/src/main/main1.iml" filepath="$PROJECT_DIR$/proxy-start/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/템플릿 메서드 패턴, 전략 패턴, 템플릿 콜백 패턴/src/test/test.iml" filepath="$PROJECT_DIR$/템플릿 메서드 패턴, 전략 패턴, 템플릿 콜백 패턴/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proxy-start/src/test/test1.iml" filepath="$PROJECT_DIR$/proxy-start/src/test/test1.iml" />
+    </modules>
+  </component>
+</project>
