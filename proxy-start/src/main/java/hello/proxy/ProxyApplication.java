@@ -6,6 +6,7 @@ import hello.proxy.config.v3_proxyfactory.ProxyFactoryConfigV1;
 import hello.proxy.config.v3_proxyfactory.ProxyFactoryConfigV2;
 import hello.proxy.config.v4_postprocessor.BeanPostProcessorConfig;
 import hello.proxy.config.v5_autoproxy.AutoProxyConfig;
+import hello.proxy.config.v6_aop.AopConfig;
 import hello.proxy.trace.logtrace.LogTrace;
 import hello.proxy.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.boot.SpringApplication;
@@ -22,7 +23,8 @@ import org.springframework.context.annotation.Import;
 //@Import(ProxyFactoryConfigV1.class) // 인터페이스 구조 어드바이스
 //@Import(ProxyFactoryConfigV2.class) //구체클래스 구조 어드바이스
 //@Import(BeanPostProcessorConfig.class) // 빈후처리기 적용한 어드바이스
-@Import(AutoProxyConfig.class) // 스프링이 제공하는 빈후처리기
+//@Import(AutoProxyConfig.class) // 스프링이 제공하는 빈후처리기
+@Import(AopConfig.class) // Aop 적용
 @SpringBootApplication(scanBasePackages = "hello.proxy.app") //주의
 public class ProxyApplication {
 
